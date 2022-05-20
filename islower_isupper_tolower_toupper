@@ -1,0 +1,34 @@
+#include<iostream>
+#include<conio.h>
+#include<ctype.h>
+using namespace std;
+ 
+int main()
+{    char str[78];
+  cout<<"Enter the charachter:";
+  gets(str);
+  for(int i=0;str[i]!='\0';i++)
+  {
+  if(isupper(str[i]))
+  cout<<"string already in alpha";
+  else
+  str[i]=toupper(str[i]);
+}
+cout<<"string in  upper case will be"<<endl;
+
+puts(str);
+
+
+cout<<"When the string is in  lower then:";
+ for(int i=0;str[i]!='\0';i++)
+  {
+  if(islower(str[i]))
+  cout<<"string already in alpha";
+  else
+  str[i]=tolower(str[i]);
+}
+puts(str);
+
+
+	 return 0;
+}
